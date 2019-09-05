@@ -100,17 +100,13 @@ export default () => (
         </Fill>
       </Layout>
     </Slide>
-    <Slide>
-      <Heading size={2}>
+    <Slide bgImage="ecosystem.png" bgRepeat="repeat" bgSize="300">
+      <Heading padding={50} size={2} bgColor="white">
         Huge Ecosystem
       </Heading>
-      <Text margin={20}>
-        Matering JavaScript is not only to know the language, but also the ecosystem.
+      <Text padding={50} bgColor="white">
+        Mastering JavaScript is not only to know the language, but also the ecosystem.
       </Text>
-      <Image
-        src="ecosystem.png"
-        height="400px"
-      />
     </Slide>
     <Slide>
       <Heading size={2}>
