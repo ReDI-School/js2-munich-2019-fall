@@ -249,6 +249,7 @@ export default () => (
         <ListItem>Basic JavaScript like variables, functions, loops, objects, arrays</ListItem>
         <ListItem>Basic DOM manipulation</ListItem>
         <ListItem>Motivation and ability to work in a team</ListItem>
+        <ListItem>Willing to regularly do the homework</ListItem>
         <ListItem>Willing to try out and research stuff at home</ListItem>
       </List>
     </Slide>
