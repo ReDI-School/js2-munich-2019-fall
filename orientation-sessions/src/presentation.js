@@ -14,6 +14,7 @@ import {
   Fill,
 } from 'spectacle';
 import createTheme from 'spectacle/lib/themes/default';
+import Avatar from 'react-avatar';
 
 require('normalize.css');
 
@@ -118,7 +119,7 @@ export default () => (
       <BlockQuote>
         <Image
           src="stackoverflow-trend-chart-languages.png"
-          height="400px"
+          height="500px"
         />
         <Cite>
           <a href="https://insights.stackoverflow.com/trends?tags=java%2Cc%2Cc%2B%2B%2Cpython%2Cc%23%2Cvb.net%2Cjavascript%2Cassembly%2Cphp%2Cperl%2Cruby%2Cvb%2Cswift%2Cr%2Cobjective-c">Stack Overflow Trends</a>
@@ -137,7 +138,7 @@ export default () => (
       <Heading size={2}>
         Single-Page Applications
       </Heading>
-      <Text>
+      <Text margin="20px">
         Applications with Web frontend,
         where the page is re-written inside the browser instead of re-loaded from the backend.
       </Text>      
@@ -153,7 +154,10 @@ export default () => (
         In JS2 course at ReDI school we focus on React.
       </Text>
       <List textColor="black">
-        <ListItem>view framework</ListItem>
+        <ListItem>declarative view framework</ListItem>
+        <ListItem>define UI components</ListItem>
+        <ListItem>describe how data maps to a UI</ListItem>
+        <ListItem>React cares about re-rendering when data changes</ListItem>
         <ListItem>based on functional programming</ListItem>
         <ListItem>initiated by Facebook</ListItem>
       </List>
@@ -165,7 +169,7 @@ export default () => (
       <BlockQuote>
         <Image
           src="stackoverflow-trend-chart-frameworks.png"
-          height="400px"
+          height="500px"
         />
         <Cite>
           <a href="https://insights.stackoverflow.com/trends?tags=jquery%2Cangularjs%2Cangular%2Creactjs">Stack Overflow Trends</a>
@@ -211,15 +215,34 @@ export default () => (
     <Slide>
       <Heading size={2}>
         Teaching Team
-      </Heading>      
-      <List textColor="black">
-        <ListItem>Bodo</ListItem>
-        <ListItem>Carl</ListItem>
-        <ListItem>Grace</ListItem>
-        <ListItem>Max</ListItem>
-        <ListItem>Raph</ListItem>
-        <ListItem>Tim</ListItem>
-      </List>
+      </Heading>
+      <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-evenly'}}>
+        <div style={{ margin: '50px' }}>
+          <Avatar round githubHandle="bodokaiser" />
+          <Text>Bodo</Text>
+        </div>
+        <div style={{ margin: '50px' }}>
+          <Avatar round name="Carl" />
+          <Text>Carl</Text>
+        </div>
+        <div style={{ margin: '50px' }}>
+          <Avatar round name="Grace" src="grace.png"/>
+          <Text>Grace</Text>
+        </div>
+        <div style={{ margin: '50px' }}>
+          <Avatar round name="Max" src="max.png"/>
+          <Text>Max</Text>
+        </div>
+        <div style={{ margin: '50px' }}>
+          <Avatar round githubHandle="pigulla" />
+          <Text>Raph</Text>
+        </div>
+        <div style={{ margin: '50px' }}>
+          <Avatar round src="tim.jpg"/>
+          {/*githubHandle="TimGeisler"*/}
+          <Text>Tim</Text>
+        </div>
+      </div>
     </Slide>
     <Slide>
       <Heading size={2}>
@@ -243,15 +266,17 @@ export default () => (
           Given the teachers of this course as a JS data structure.
           <CodePane
             lang="js" margin="20px auto" overflow="overflow"
+            theme="light"
+            textSize="24"
             source={
-`const teachers = [
-{name: 'Bodo', gender: 'm'},
-{name: 'Carl', gender: 'm'},
-{name: 'Grace', gender: 'f'},
-{name: 'Max', gender: 'm'},
-{name: 'Raph', gender: 'm'},
-{name: 'Tim', gender: 'm'},
-];`}
+`  const teachers = [
+    {name: 'Bodo', gender: 'm'},
+    {name: 'Carl', gender: 'm'},
+    {name: 'Grace', gender: 'f'},
+    {name: 'Max', gender: 'm'},
+    {name: 'Raph', gender: 'm'},
+    {name: 'Tim', gender: 'm'},
+  ];`}
           />
           <List textColor="black">
             <ListItem>Write a function which computes the number of female resp. male teachers.</ListItem>
