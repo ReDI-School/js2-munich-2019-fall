@@ -1,20 +1,7 @@
 import React from 'react';
-import {
-  BlockQuote,
-  Cite,
-  Deck,
-  Heading,
-  ListItem,
-  List,
-  Slide,
-  Text,
-  Image,
-  CodePane,
-  Layout,
-  Fill,
-} from 'spectacle';
-import createTheme from 'spectacle/lib/themes/default';
 import Avatar from 'react-avatar';
+import { BlockQuote, Cite, CodePane, Deck, Fill, Heading, Image, Layout, List, ListItem, Slide, Text } from 'spectacle';
+import createTheme from 'spectacle/lib/themes/default';
 
 require('normalize.css');
 
