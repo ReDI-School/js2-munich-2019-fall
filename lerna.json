@@ -1,0 +1,6 @@
+{
+  "packages": [
+    "sessions/*"
+  ],
+  "version": "independent"
+}

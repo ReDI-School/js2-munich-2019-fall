@@ -1,0 +1,13 @@
+{
+  "name": "root",
+  "private": true,
+  "dependencies": {
+    "react": "^16.9.0",
+    "react-avatar": "^3.6.0",
+    "react-dom": "^16.9.0",
+    "spectacle-scripts": "2.4.0"
+  },
+  "devDependencies": {
+    "lerna": "^3.16.4"
+  }
+}
