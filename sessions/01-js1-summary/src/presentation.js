@@ -1,5 +1,5 @@
 import React from 'react';
-import { Deck, Heading, Image, Slide } from 'spectacle';
+import { Deck, Heading, Image, MarkdownSlides, Slide } from 'spectacle';
 import createTheme from 'spectacle/lib/themes/default';
 
 require('normalize.css');
@@ -40,10 +40,35 @@ export default () => (
         2019-09-xx
       </Heading>
     </Slide>
-    <Slide>
-      <Heading size={1} caps>
-        ...
-      </Heading>
-    </Slide>
+    {MarkdownSlides`
+## JavaScript concepts used in ReDI JS 2019 spring course
+(according to https://github.com/ReDI-School/js-munich-2019-spring)
+
+- variables
+- functions, return values
+- if-then-else statements
+- conditions, comparison operators
+- primitive data types: number, string, boolean
+- Date object
+- objects
+- arrays
+- loops: while, for
+- DOM API
+  - important for React:
+    - document.getElementById
+    - events
+- tools:
+  - Chrome DevTools
+  - console.log
+  - using the debugger, breakpoints
+
+---
+
+have some examples:
+- function which computes the maximum of two values
+- function which adds all numbers in a list
+- function which gets a list of objects and computes the average of a number property of the objects
+- function which gets a list of objects and adds corresponding DOM nodes to a given DOM node
+    `}
   </Deck>
 );
