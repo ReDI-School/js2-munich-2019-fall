@@ -2,6 +2,7 @@ import React from 'react';
 import Avatar from 'react-avatar';
 import { BlockQuote, Cite, CodePane, Deck, Fill, Heading, Image, Layout, List, ListItem, Slide, Text } from 'spectacle';
 import createTheme from 'spectacle/lib/themes/default';
+import { brotliDecompress } from 'zlib';
 
 require('normalize.css');
 
@@ -200,31 +201,20 @@ export default () => (
         Teaching Team
       </Heading>
       <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-evenly'}}>
-        <div style={{ margin: '50px' }}>
-          <Avatar round githubHandle="bodokaiser" />
-          <Text>Bodo</Text>
-        </div>
-        <div style={{ margin: '50px' }}>
-          <Avatar round name="Carl" />
-          <Text>Carl</Text>
-        </div>
-        <div style={{ margin: '50px' }}>
-          <Avatar round name="Grace" src="grace.png"/>
-          <Text>Grace</Text>
-        </div>
-        <div style={{ margin: '50px' }}>
-          <Avatar round name="Max" src="max.png"/>
-          <Text>Max</Text>
-        </div>
-        <div style={{ margin: '50px' }}>
-          <Avatar round githubHandle="pigulla" />
-          <Text>Raph</Text>
-        </div>
-        <div style={{ margin: '50px' }}>
-          <Avatar round src="tim.jpg"/>
-          {/*githubHandle="TimGeisler"*/}
-          <Text>Tim</Text>
-        </div>
+        {[{ name: 'Bodo', githubHandle: 'bodokaiser' },
+          { name: 'Carl', src: 'carl.jpg' },
+          { name: 'Grace', src: 'grace.png' },
+          { name: 'Max', src: 'max.png' },
+          { name: 'Raph', githubHandle: 'pigulla' },
+          { name: 'Tim', src: 'tim.jpg' /* , githubHandle: 'TimGeisler'*/},
+         ].map(
+          teacher => (
+            <div style={{ margin: '50px' }}>
+              <Avatar round {...teacher} />
+              <Text>{teacher.name}</Text>
+            </div>       
+          )
+        )}
       </div>
     </Slide>
     <Slide>
