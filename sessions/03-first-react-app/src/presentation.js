@@ -153,7 +153,7 @@ To create a production build, use npm run build.
       </Heading>
       <Text>If no new browser tab opens, open http://localhost:3000/ in your browser.</Text>
       <Text>Hooray! You will now see your first React app in your browser:</Text>
-      <Image src="browser.png"/>
+      <Image src="browser.png" height={700}/>
     </Slide>
     <Slide>
       <Heading size={2}>
@@ -161,7 +161,7 @@ To create a production build, use npm run build.
       </Heading>
       <Text>Start Visual Studio Code and open the folder <Code>my-cookbook</Code>.</Text>
       <Text>Open the file <Code>src/App.js</Code>.</Text>
-      <Image src="vs-code.png"/>
+      <Image src="vs-code.png" height={700}/>
     </Slide>
     <Slide>
       <Heading size={2}>
@@ -170,8 +170,8 @@ To create a production build, use npm run build.
       <Text>Open the file <Code>src/App.js</Code>, modify some text, and save it.</Text>
       <Text>The browser reloads the page and shows the modified app.</Text>
       <Layout>
-        <Image src="vs-code-change-ok.png"/>
-        <Image src="browser-change-ok.png"/>
+        <Image src="vs-code-change-ok.png" height={500}/>
+        <Image src="browser-change-ok.png" height={500}/>
       </Layout>
     </Slide>
     <Slide>
@@ -180,10 +180,10 @@ To create a production build, use npm run build.
       </Heading>
       <Text>In case you make an error, an error message is shown:</Text>
       <Layout>
-        <Image src="vs-code-change-error.png"/>
-        <Image src="browser-change-error.png"/>
+        <Image src="vs-code-change-error.png" height={500}/>
+        <Image src="browser-change-error.png" height={500}/>
       </Layout>
-      <Text>In addition, you can see the error message in the console where you entered <Code>npm run start</Code>.</Text>
+      <Text>The error message also appears in the console where you entered <Code>npm run start</Code>.</Text>
     </Slide>
     <Slide>
       <Heading size={2} fit>
@@ -191,7 +191,7 @@ To create a production build, use npm run build.
       </Heading>
       <Text>TODO: show all relevant files and add explanations</Text>
     </Slide>
-    <Slide bgImage="board-928381_960_720.jpg" />
+    <Slide bgImage="board-928381_960_720.jpg"/>
     <Slide>
       <Heading size={2}>
         HTML and CSS in React Apps
