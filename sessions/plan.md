@@ -68,3 +68,8 @@ extend recipe site by shopping basket
     manage shopping basket with own microservice
 
 recipe editor
+
+automatic testing
+- unit tests
+- snapshot tests
+- e2e testing with Cyprus (perhaps session by Anna from JS1)
