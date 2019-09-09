@@ -2,7 +2,6 @@ import React from 'react';
 import Avatar from 'react-avatar';
 import { BlockQuote, Cite, CodePane, Deck, Fill, Heading, Image, Layout, List, ListItem, Slide, Text } from 'spectacle';
 import createTheme from 'spectacle/lib/themes/default';
-import { brotliDecompress } from 'zlib';
 
 require('normalize.css');
 
