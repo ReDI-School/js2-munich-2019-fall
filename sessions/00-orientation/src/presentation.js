@@ -191,7 +191,7 @@ export default () => (
           <List textColor="black">
             <ListItem>work on a realistic project in a team</ListItem>
             <ListItem>ideally: suggest your own project</ListItem>
-            <ListItem>include topics on demand which are required for the project</ListItem>
+            <ListItem>include topics in technology lessons on demand which are required for the project</ListItem>
           </List>
         </div>
       </Layout>      
