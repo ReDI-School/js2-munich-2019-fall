@@ -1,5 +1,5 @@
 import React from 'react';
-import { Code, Deck, Heading, Image, Layout, List, ListItem, Slide, Text } from 'spectacle';
+import { Code, Deck, Heading, Image, Layout, List, ListItem, Notes, Slide, Text } from 'spectacle';
 import Terminal from "spectacle-terminal";
 import createTheme from 'spectacle/lib/themes/default';
 
@@ -48,15 +48,25 @@ export default () => (
     </Slide>
     <Slide>
       <Text>
-        As a common theme for all exercises and homeworks,
-        we will create a web site during the course which presents cooking recipes.
+        During the course, we will create a web site which presents cooking recipes.
       </Text>
       <Text>
-        There are several such sites in the internet.
-        Some of them even expose an API for their recipe data which we can use later during the course.
+        There are several such sites in the internet:
       </Text>
-      <Image />
-      {/* TODO show screenshots of some recipe sites like yummly, allrecipes, chefkoch, ... */}
+      <div style={{margin: '50px', display: 'flex', flexDirection: 'row', justifyContent: 'space-evenly'}}>
+        <div>
+          <Text>chefkoch.de</Text>
+          <Image src="chefkoch.png" height={400}/>
+        </div>
+        <div>
+          <Text>allrecipies.com</Text>
+          <Image src="allrecipes.png" height={400}/>
+        </div>
+        <div>
+          <Text>foodlavie.com</Text>
+          <Image src="foodlavie.png" height={400}/>
+        </div>
+      </div>
     </Slide>
     <Slide>
       <Heading size={2} fit>
@@ -196,15 +206,17 @@ To create a production build, use npm run build.
       <Heading size={2}>
         HTML and CSS in React Apps
       </Heading>
-      <List>
+      <List textColor="black">
         <ListItem>Search for a cooking recipe of your favorite dish.</ListItem>
         <ListItem>[optional] Cook this dish and take photos of the important steps and the final result.</ListItem>
-        <ListItem>Edit the file App.js. Add some HTML inside the render method which describes your cooking recipe.</ListItem>
+        <ListItem>Edit the file App.js. Add some HTML inside the render method which describes your cooking recipe. Your recipe should have a title, a description, a list of ingredients, and show the required steps.</ListItem>
         <ListItem>
           Use some images and add some styling to make the recipe look nice.
           You can either add your styles to the CSS file or directly use style attributes.
         </ListItem>
       </List>
+      <Text>Some HTML attributes are written slightly differently in React. See https://reactjs.org/docs/dom-elements.html for a detailled list of differences.</Text>
+      <Notes>We should start with the excercise during the session. The homework should be to complete the work.</Notes>
     </Slide>
   </Deck>
 );
