@@ -9,6 +9,7 @@
     "spectacle-terminal": "^0.5.0"
   },
   "devDependencies": {
+    "gh-pages": "^2.1.1",
     "lerna": "^3.16.4"
   }
 }

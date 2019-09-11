@@ -4,4 +4,13 @@ npm i -g lerna
 
 lerna bootstrap --hoist
 
-lerna run --scope 00-orientation start
+to show the slides
+lerna run --scope 00 start
+
+to build the dist folders
+lerna run --scope 00* build
+
+to deploy the dist folders to the gh-pages branch
+lerna run --scope 00* deploy
+
+git push to push the gh-pages branch to github
