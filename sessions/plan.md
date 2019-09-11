@@ -20,21 +20,54 @@ create first functional components, props, JSX
 
 complex JS data structures, map, arrow functions
 
-# 06-modules
+# 06-multiple-recipes
+
+const recipes = [kaiserschmarrn, lasagne, ...];
+or
+const recipes = { kaiserschmarrn, lasagne, ... };
+
+Extend the app such that a recipe can be selected using a URL query parameter
+
+This session should again train the use of data structure, map, teach the location API.
+
+Furthermore, when taking recipes from all participants, we have to think about
+- data structures
+- team work
+
+# 07-modules
 
 split project into files, import, export
+webpack: bundle built from  all files
+
 use libraries like lodash
 package.json: dependencies
-webpack: bundle built from  all files
 
 # next sessions
 
 state: useState hook
-making recipe scalable: enter number of persons, re-compute ingredients
+making recipe scalable: enter number of persons, re-compute ingredients, compute price
 
 
 UI library: use material-ui
 use components from material-ui to improve the UI of the cookbook
+
+
+navigation design: introduce more pages
+- recipe-details page (we already created this page)
+- recipe search page
+- recipe search-results page
+implement those pages using material-ui
+(search should do some simple in-memory search on the recipes data structure)
+
+
+introduce react-router
+
+
+survey available recipe APIs
+introduce HTTP/REST
+use Postman for requests
+look at data structures provided by this API
+change/extend existing code appropriately
 
 
 promises, async/await
@@ -44,13 +77,11 @@ data fetching: fetch recipe data from backend REST API
 intro into Chrome DevTools' network console
 
 
-navigation design: introduce more pages
-- recipe-details page (we already created this page)
-- recipe search page
-- recipe search-results page
 
-
-introduce react-router
+automatic testing
+- unit tests
+- snapshot tests
+- e2e testing with Cyprus (perhaps session by Anna from JS1)
 
 
 # unsorted
@@ -62,14 +93,9 @@ perhaps also do some bidi UI for Arabic language if Arab-language speakers are p
 
 create own recipe backend with node.js/express/MongoDB or similar
 
-extend recipe site by shopping basket
+extend recipe site by shopping basket (like Yummly)
     idea: collect items from recipes which have to be bought in order to cook them
     store shopping basket in local storage
     manage shopping basket with own microservice
 
 recipe editor
-
-automatic testing
-- unit tests
-- snapshot tests
-- e2e testing with Cyprus (perhaps session by Anna from JS1)
