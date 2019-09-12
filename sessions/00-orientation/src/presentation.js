@@ -200,11 +200,10 @@ export default () => (
         Teaching Team
       </Heading>
       <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-evenly'}}>
-        {[{ name: 'Bodo', githubHandle: 'bodokaiser' },
-          { name: 'Carl', src: 'carl.jpg' },
+        {[{ name: 'Carl', src: 'carl.jpg' },
           { name: 'Grace', src: 'grace.png' },
           { name: 'Max', src: 'max.png' },
-          { name: 'Raph', githubHandle: 'pigulla' },
+          { name: 'Raph', src: 'raph.jpg' /* githubHandle: 'pigulla'*/},
           { name: 'Tim', src: 'tim.jpg' /* , githubHandle: 'TimGeisler'*/},
          ].map(
           teacher => (
@@ -243,7 +242,6 @@ export default () => (
             textSize="24"
             source={
 `  const teachers = [
-    {name: 'Bodo', gender: 'm'},
     {name: 'Carl', gender: 'm'},
     {name: 'Grace', gender: 'f'},
     {name: 'Max', gender: 'm'},
