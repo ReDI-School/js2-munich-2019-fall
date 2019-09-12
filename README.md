@@ -6,9 +6,7 @@ Install dependencies: `lerna bootstrap --hoist`
 
 Show the slides: `lerna run --scope "00*" start`
 
-Build the dist folders: `lerna run --scope "00*" build`
+Publish the slides:
 
-Deploy the dist folders to the gh-pages branch:
-`lerna run --scope "00*" deploy`
-
-`git push` to push the gh-pages branch to github
+1. Build the dist folders: `lerna run --scope "00*" build`
+2. Deploy and push the dist folders to the gh-pages branch: `lerna run --scope "00*" deploy`
