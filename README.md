@@ -1,12 +1,12 @@
 This repository contains the teaching material for Fall 2019 version of the ReDI School Munich course "JavaScript 2".
 
+The teaching material is published at https://redi-school.github.io/js2-munich-2019-fall/.
+
 The slides are implemented using [Spectacle](https://github.com/FormidableLabs/spectacle), which is a React-based library for creating presentations.
 
 Each session is implemented as a separate NPM package as a subfolder to the folder `sessions`.
 
 In order to avoid multiple copies of the `node_modules` folders, we maintain the slides using [Lerna](https://lerna.js.org/).
-
-[![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/)
 
 Lerna should be installed globally: `npm i -g lerna`
 
