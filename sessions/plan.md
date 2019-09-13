@@ -22,6 +22,8 @@ publishing the app
 
 create first functional components, props, JSX
 
+Perhaps this refactoring could be a good way to introduce Jest snapshot tests. So we can automatically test whether we get some errors due to the refactoring. The students do not need to understand what is going on in depth, but should get the idea that testing can be automatized. We could just give them a pre-build snapshot test case.
+
 # 05-data
 
 complex JS data structures, map, arrow functions
@@ -86,7 +88,7 @@ intro into Chrome DevTools' network console
 
 automatic testing
 - unit tests
-- snapshot tests
+- snapshot tests (it would make sense to have those tests when refactoring the static page)
 - e2e testing with Cyprus (perhaps session by Anna from JS1)
 
 
