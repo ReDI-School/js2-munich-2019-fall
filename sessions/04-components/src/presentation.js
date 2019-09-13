@@ -142,14 +142,55 @@ function Ingredient(props) {
         ES6 syntax: destructuring: const { amount, unit, ingredient } = props;
       */}
     </Slide>
+    <Slide>
+      <Heading size={2}>
+        Testing the Refactoring
+      </Heading>
+      <Text>
+        We will refactor our App by defining and using React components.
+        After this refactoring, our App should look the same.
+      </Text>
+
+      {/* have some small dialog which gives the idea for snapshot testing */}
+      <Text>A: How can we ensure and test this?</Text>
+      <Text>B: We could look carefully after each change to the result.</Text>
+      <Text>A: Nice idea. But I am too lazy for this repeated task.</Text>
+      <Text>C: We have a computer. Can't we let the computer do it?</Text>
+
+      <Text>The computer could take a "snapshot" after each change and compare it to the previous snapshot.</Text>
+    </Slide>
+    <Slide>
+      <Heading size={2}>
+        Snapshot Testing
+      </Heading>
+      <Text>Explain the idea about snapshot testing</Text>
+    </Slide>
+    <Slide>
+      <Heading size={2}>
+        Snapshot Testing with Jest
+      </Heading>
+      <Text>need to install Jest?</Text>
+      <Text>add Jest snapshot testing to App.test.js</Text>
+    </Slide>
+    <Slide>
+      <Heading size={2}>
+        Snapshot Testing with Jest
+      </Heading>
+      <Text>show how to run Jest in the --watch mode</Text>
+      <Text>show successful test</Text>
+      <Text>show failing test</Text>
+      <Text>show how to update snapshot</Text>
+      <Text>when to commit snapshots</Text>
+    </Slide>
     <Slide bgImage="board-928381_960_720.jpg" />
     <Slide>
       <Heading size={2}>
-        Defining Components
+        Defining and Testing Components
       </Heading>
       <List>
         <ListItem>Define components for Ingredients, Steps, ...</ListItem>
         <ListItem>apply them on your recipe</ListItem>
+        <ListItem>use Jest snapshot tests to ensure you did not change the output of your App during the refactoring</ListItem>
       </List>
     </Slide>
   </Deck>
