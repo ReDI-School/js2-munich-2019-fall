@@ -1,5 +1,5 @@
 import React from 'react';
-import { CodePane, Deck, Heading, Image, List, ListItem, Notes, Slide, Text } from 'spectacle';
+import { Code, CodePane, Deck, Heading, Image, List, ListItem, Notes, Slide, Text } from 'spectacle';
 import createTheme from 'spectacle/lib/themes/default';
 
 require('normalize.css');
@@ -155,28 +155,31 @@ function Ingredient(props) {
       <Text>A: How can we ensure and test this?</Text>
       <Text>B: We could look carefully after each change to the result.</Text>
       <Text>A: Nice idea. But I am too lazy for this repeated task.</Text>
-      <Text>C: We have a computer. Can't we let the computer do it?</Text>
-
-      <Text>The computer could take a "snapshot" after each change and compare it to the previous snapshot.</Text>
+      <Text>C: We could write several Jest test cases.</Text>
+      <Text>A: Hmm, this involves writing much more code. This also does not convince a lazy guy.</Text>
+      <Text>C: We have a computer. Can't we let the computer do the comparison testing?</Text>
+      <Text>C: The computer could take a "snapshot" after each change and compare it to the previous snapshot.</Text>
+      <Text>A: This is an excellent idea. Let's have a look whether somebody already had it and implemented it.</Text>
     </Slide>
     <Slide>
       <Heading size={2}>
         Snapshot Testing
       </Heading>
       <Text>Explain the idea about snapshot testing</Text>
+      <Text>use some diagram</Text>
     </Slide>
     <Slide>
       <Heading size={2}>
         Snapshot Testing with Jest
       </Heading>
-      <Text>need to install Jest?</Text>
+      <Text><Code>npm i -D react-test-renderer</Code></Text>
       <Text>add Jest snapshot testing to App.test.js</Text>
+      <Text>run <Code>npm run test</Code> in Windows cmd window</Text>
     </Slide>
     <Slide>
       <Heading size={2}>
         Snapshot Testing with Jest
       </Heading>
-      <Text>show how to run Jest in the --watch mode</Text>
       <Text>show successful test</Text>
       <Text>show failing test</Text>
       <Text>show how to update snapshot</Text>

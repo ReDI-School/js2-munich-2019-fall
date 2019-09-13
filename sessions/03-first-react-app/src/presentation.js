@@ -201,6 +201,27 @@ To create a production build, use npm run build.
       </Heading>
       <Text>TODO: show all relevant files and add explanations</Text>
     </Slide>
+    <Slide>
+      <Heading size={2}>
+        Testing the App
+      </Heading>
+      <Text>
+        The files created by create-react-app contain a file App.test.js.
+        This file contains a test case.
+        show test case
+        explain that test case will be refined later. Currently handle it as a black box.
+        Test cases can be automatically executed by a "test runner".
+        Jest (jestjs.io) is such a test runner.
+        run jest in a terminal (for Windows, git bash does not work, only Windows Cmd works).
+        show successful case
+        show error case
+      </Text>
+      <Text>
+        say something about test automation
+        let the computer do the boring and repetiable tasks
+        run the tests on some CI system
+      </Text>
+    </Slide>
     <Slide bgImage="board-928381_960_720.jpg"/>
     <Slide>
       <Heading size={2}>
@@ -214,6 +235,7 @@ To create a production build, use npm run build.
           Use some images and add some styling to make the recipe look nice.
           You can either add your styles to the CSS file or directly use style attributes.
         </ListItem>
+        <ListItem>make sure that your automated test runs through</ListItem>
       </List>
       <Text>Some HTML attributes are written slightly differently in React. See https://reactjs.org/docs/dom-elements.html for a detailled list of differences.</Text>
       <Notes>We should start with the excercise during the session. The homework should be to complete the work.</Notes>
