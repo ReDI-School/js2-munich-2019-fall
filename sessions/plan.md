@@ -8,9 +8,15 @@ repeat all topics covered in JS1 course (+ optionally, HTML/CSS course)
 
 install Chrome, VS Code, node.js and git
 
+obtain a github account
+
 # 03-first-react-app
 
 use create-react-app, add HTML/CSS to app
+
+first steps with git, push code to github
+
+publishing the app
 
 # 04-components
 
