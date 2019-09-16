@@ -41,9 +41,19 @@ package.json: dependencies
 state: useState hook
 making recipe scalable: enter number of persons, re-compute ingredients, compute price
 
+# 08-fetch
+
+data fetching: fetch recipe data from backend using GET
+JSON
+fetch API
+async/await
+effects: useEffect hook
+intro into Chrome DevTools' network console
+how to mock fetch API for tests
+
 # next sessions
 
-multiple recipes
+multiple recipes (not sure whether this makes sense)
 
     const recipes = [kaiserschmarrn, lasagne, ...];
     or
@@ -56,7 +66,6 @@ multiple recipes
     Furthermore, when taking recipes from all participants, we have to think about
     - data structures
     - team work
-
 
 
 UI library: use material-ui
@@ -79,14 +88,6 @@ introduce HTTP/REST
 use Postman for requests
 look at data structures provided by this API
 change/extend existing code appropriately
-
-
-promises, async/await
-axios?
-effects: useEffect hook
-data fetching: fetch recipe data from backend REST API
-intro into Chrome DevTools' network console
-
 
 
 automatic testing
