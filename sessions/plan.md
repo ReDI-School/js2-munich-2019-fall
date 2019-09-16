@@ -84,6 +84,19 @@ introduce react-router
 
 
 survey available recipe APIs
+    API catalogs
+        https://rapidapi.com/collection/food-apis
+        https://www.programmableweb.com/category/food
+
+    some APIs:
+        https://spoonacular.com/food-api    REST API with 150 API calls / day free. Data structures seem very good.
+        https://www.themealdb.com/api.php   REST API with free developer key
+        https://developers.whisk.com/   Graph-API (not GraphQL), does not seem to be free
+
+    Formats
+        http://microformats.org/wiki/hrecipe (microformat)
+        https://schema.org/Recipe
+
 introduce HTTP/REST
 use Postman for requests
 look at data structures provided by this API
