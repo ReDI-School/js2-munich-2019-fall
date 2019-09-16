@@ -26,34 +26,37 @@ Perhaps this refactoring could be a good way to introduce Jest snapshot tests. S
 
 # 05-data
 
-complex JS data structures, map, arrow functions
+complex JS data structures, map, arrow functions, compute price
 
-# 06-multiple-recipes
-
-const recipes = [kaiserschmarrn, lasagne, ...];
-or
-const recipes = { kaiserschmarrn, lasagne, ... };
-
-Extend the app such that a recipe can be selected using a URL query parameter
-
-This session should again train the use of data structure, map, teach the location API.
-
-Furthermore, when taking recipes from all participants, we have to think about
-- data structures
-- team work
-
-# 07-modules
+# 06-modules
 
 split project into files, import, export
-webpack: bundle built from  all files
+webpack: bundle built from all files
 
-use libraries like lodash
+use libraries like lodash and classnames
 package.json: dependencies
 
-# next sessions
+# 07-state
 
 state: useState hook
 making recipe scalable: enter number of persons, re-compute ingredients, compute price
+
+# next sessions
+
+multiple recipes
+
+    const recipes = [kaiserschmarrn, lasagne, ...];
+    or
+    const recipes = { kaiserschmarrn, lasagne, ... };
+
+    Extend the app such that a recipe can be selected using a URL query parameter
+
+    This session should again train the use of data structure, map, teach the location API.
+
+    Furthermore, when taking recipes from all participants, we have to think about
+    - data structures
+    - team work
+
 
 
 UI library: use material-ui
